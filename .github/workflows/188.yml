@@ -3,8 +3,10 @@ name: Spigot1.8.8 Autobuild
 on:
   schedule:
     - cron:  '0 0 * * 0'
-  push
-    
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
