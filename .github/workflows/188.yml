@@ -23,9 +23,11 @@ jobs:
         name: Download the file
         with:
           url: "https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
-          target: /
+          target: public/
+      - name: make gradle wrapper executable
+        run: chmod +x ./public/BuildTools.jar
       - name: Start Build
-        run: java -jar BuildTools.jar --rev 1.8.8
+        run: java -jar public/BuildTools.jar --rev 1.8.8
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
@@ -34,4 +36,4 @@ jobs:
           prerelease: true
           title: "Spigot1.8.8 自动构建"
           files: |
-            *.jar
+             public/*.jar
