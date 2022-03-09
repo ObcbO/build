@@ -1,8 +1,6 @@
 name: Spigot1.8.8 Autobuild
 
 on:
-  schedule:
-    - cron:  '0 0 * * 0'
   push:
     branches:
       - main
