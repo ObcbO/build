@@ -18,13 +18,13 @@ jobs:
           java-version: 16
       - run: git clone https://github.com/PolyhedralDev/Terra
       - run: cd Terra
-      - run: ./Terra/gradlew build
+      - run: gradlew build
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
           prerelease: true
-          title: "Spigot1.8.8 自动构建"
+          title: "自动构建"
           files: |
              *
