@@ -17,8 +17,7 @@ jobs:
           distribution: adopt
           java-version: 16
       - run: git clone https://github.com/PolyhedralDev/Terra
-      - run: cd Terra
-      - run: ./gradlew build
+      - run: ./Terra/gradlew build
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
