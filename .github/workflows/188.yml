@@ -19,8 +19,8 @@ jobs:
       - run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
       - run: 
           cd Purpur
-          ./Purpur/gradlew applyPatches
-          ./Purpur/gradlew build
+          ./gradlew applyPatches
+          ./gradlew build
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
