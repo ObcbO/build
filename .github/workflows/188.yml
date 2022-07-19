@@ -17,9 +17,10 @@ jobs:
           distribution: adopt
           java-version: 17
       - run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
-      - run: cd Purpur
-      - run: ./Purpur/gradlew applyPatches
-      - run: ./Purpur/gradlew build
+      - run: 
+          cd Purpur
+          ./Purpur/gradlew applyPatches
+          ./Purpur/gradlew build
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
