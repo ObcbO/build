@@ -16,12 +16,12 @@ jobs:
         with:
           distribution: adopt
           java-version: 17
-      #- run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
+      - run: git clone -b ver/5.1.4 https://github.com/PolyhedralDev/Terra
       - run: |
+          cd Terra
           git config --global user.email "m17089494917@163.com"
           git config --global user.name "ObcbO"
           chmod +x gradlew
-          ./gradlew applyPatches
           ./gradlew build
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
