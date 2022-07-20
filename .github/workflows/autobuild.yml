@@ -16,7 +16,7 @@ jobs:
         with:
           distribution: adopt
           java-version: 16
-      - run: git clone https://github.com/PolyhedralDev/Terra
+      #- run: git clone https://github.com/PolyhedralDev/Terra
       - run: |
           cd Terra
           git config --global user.email "m17089494917@163.com"
