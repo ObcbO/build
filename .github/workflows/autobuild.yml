@@ -1,4 +1,4 @@
-name: Spigot1.8.8 Autobuild
+name: Autobuild
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
         with:
           distribution: adopt
           java-version: 17
-      - run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
+      #- run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
       - run: |
           cd Purpur
           git config --global user.email "m17089494917@163.com"
