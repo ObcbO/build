@@ -18,7 +18,6 @@ jobs:
           java-version: 17
       #- run: git clone -b ver/1.16.5 https://github.com/PurpurMC/Purpur
       - run: |
-          cd Purpur
           git config --global user.email "m17089494917@163.com"
           git config --global user.name "ObcbO"
           ./gradlew applyPatches
