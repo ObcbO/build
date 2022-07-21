@@ -18,7 +18,7 @@ jobs:
           java-version: 16
       #- run: git clone https://github.com/PolyhedralDev/Terra
       - run: |
-          cd Terra
+          cd Iris
           git config --global user.email "m17089494917@163.com"
           git config --global user.name "ObcbO"
           chmod +x gradlew
