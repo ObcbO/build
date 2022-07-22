@@ -22,7 +22,8 @@ jobs:
           git config --global user.email "m17089494917@163.com"
           git config --global user.name "ObcbO"
           chmod +x gradlew
-          ./gradlew build
+          ./gradlew setup
+          ./gradlew iris
       - name: Automatic Releases
         uses: marvinpinto/action-automatic-releases@v1.2.1
         with:
